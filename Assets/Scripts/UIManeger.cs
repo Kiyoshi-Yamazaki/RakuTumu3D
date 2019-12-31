@@ -37,7 +37,7 @@ public class UIManeger : MonoBehaviour
                 break; 
        }
         builderText.Length = 0;
-        builderText.Clear();
+        // builderText.Clear();
         this.selectText.GetComponent<Text>().text = "";  
     }
     public void BackToMenu(int i)
