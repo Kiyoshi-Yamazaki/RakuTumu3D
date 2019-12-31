@@ -190,10 +190,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c11cd738493324035a5273f6bca260d9, type: 3}
-    m_FontSize: 14
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 487334933}
   - component: {fileID: 487334932}
   - component: {fileID: 487334931}
+  - component: {fileID: 487334935}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -407,6 +408,7 @@ RectTransform:
   - {fileID: 1819660961}
   - {fileID: 1267591916}
   - {fileID: 1759422169}
+  - {fileID: 1616048654}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -415,6 +417,105 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &487334935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487334930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817f7f909b191412e9c461cdc426c432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SideWall2t: {fileID: 1358691457}
+  BackWall2t: {fileID: 1095487078}
+  FrontWall2t: {fileID: 1381766226}
+  BottomWall2t: {fileID: 1416945929}
+  TopWall2t: {fileID: 1658155088}
+  SideWall3t: {fileID: 1395830607}
+  BackWall3t: {fileID: 1659568528}
+  FrontWall3t: {fileID: 2582827558938055471}
+  BottomWall3t: {fileID: 81078456}
+  TopWall3t: {fileID: 6429822442862940265}
+  SideWall4t: {fileID: 446297672}
+  BackWall4t: {fileID: 163123600}
+  FrontWall4t: {fileID: 82759539}
+  BottomWall4t: {fileID: 1147851884}
+  TopWall4t: {fileID: 122773556}
+  cardboardS: {fileID: 100000, guid: 84fa1372da0bc1849a3f058e3cad16eb, type: 3}
+  RGR1: {fileID: 1471783364419747468, guid: bb51e712636794287803b6e1fcd16b64, type: 3}
+  RGR2: {fileID: 8812071459807516305, guid: 334c46caaf71444d1a355523c0bf130b, type: 3}
+  RGR3: {fileID: 7903102303336432891, guid: 7de7cc99555864912afd60fd9e1bd370, type: 3}
+  BedMat1: {fileID: 9166725183351720939, guid: f3e9d1404f54444a59bbf02a1c8d102d, type: 3}
+  BedMat2: {fileID: 8110255873195616247, guid: c59f5c67d7ff14da89aa72c172f08d65, type: 3}
+  BedMat3: {fileID: 8377613602941964504, guid: 05ff69471b4a640b2b8c13c51c2f599f, type: 3}
+  BedMat4: {fileID: 2651007462345829497, guid: 12e976a4726614ef6a476a1555848814, type: 3}
+  BedMat5: {fileID: 8146877248006817798, guid: 29366d935b3674cb599fe35cd647fc04, type: 3}
+  Bookcase: {fileID: 7752413486671227368, guid: 301955b3a37d7415a9ec0e24362412ae,
+    type: 3}
+  DiningChair: {fileID: 943227275853604820, guid: e57cca546bdf74446800c018632f89e4,
+    type: 3}
+  DeskChair: {fileID: 2222734125892580413, guid: 5050a5d69d54e4f44b0d5feddfcc9e33,
+    type: 3}
+  ColorBox: {fileID: 4311095810523751108, guid: 2a470ef9b0ce44d309ddbe072fcebb44,
+    type: 3}
+  CostumCase2: {fileID: 7983126125394795444, guid: 2322b474c50ee4ecf9baaeea295249f1,
+    type: 3}
+  CupBoard1: {fileID: 8500769923316697291, guid: 25eb9ebca11914091b926fb52c082b91,
+    type: 3}
+  CupBoard2: {fileID: 5168722054419519510, guid: 7c53f567be0fd4d31ae7f54334a26a82,
+    type: 3}
+  CupBoard3: {fileID: 3933761878018505986, guid: d076f945d67ee4a5a820c2e02ea9c52f,
+    type: 3}
+  CupBoard4: {fileID: 4083286944399247441, guid: 37984d7c65d664bba93c2ed0d0c9a35c,
+    type: 3}
+  KitchenTable1: {fileID: 7256461958286345349, guid: 723dd2a9bb8e14f8ba612dad1d13a563,
+    type: 3}
+  KitchenTable2: {fileID: 4289495091129040851, guid: 8291c38b3466f429a90d8a03bfcd4dbd,
+    type: 3}
+  KitchenTable3: {fileID: 5102427871497815931, guid: 78aaa091ce1e64a4ba0bb85b1af0f21d,
+    type: 3}
+  LivingBoard2: {fileID: 2209668752178643823, guid: 7e1a38455aa3b48e19a5a216b8e02fa0,
+    type: 3}
+  LivingBoard1: {fileID: 2209668752178643823, guid: 7e1a38455aa3b48e19a5a216b8e02fa0,
+    type: 3}
+  Sofa1: {fileID: 7401472799734004094, guid: ee013b1c760fa451a8a8fb65b87d1f96, type: 3}
+  Sofa2: {fileID: 5607346627945133094, guid: 05513089811094aae886bb315c3c6739, type: 3}
+  Sofa3: {fileID: 4947035515793176574, guid: c401aa21addd440448ad0559d26bb480, type: 3}
+  Desk: {fileID: 8997211560295300431, guid: 87cc09ca6c86748d6aac03823a3e91ce, type: 3}
+  ThreeStageCase1: {fileID: 74187636066635477, guid: 69c4bceff28704e078b1e54855aebba8,
+    type: 3}
+  ThreeStageCase2: {fileID: 2563452660585098547, guid: 183a61b6ae669495da1bc58fba77145e,
+    type: 3}
+  Tire2: {fileID: 3828099352269919622, guid: 8005f56a3350f4e5fbf67ac8e66ea254, type: 3}
+  Tire1: {fileID: 1151170714292022523, guid: 8cc537f30b42d47f89e424426003b20a, type: 3}
+  TV1: {fileID: 4008116305663799113, guid: 8b597b44d7c014c76bcf12518d708dd1, type: 3}
+  TV2: {fileID: 3543223832627370282, guid: 30def2d1b6c7a4454a0f9818913da637, type: 3}
+  TV3: {fileID: 1962630161316223753, guid: 0dfd0c3156ec142cca0a7dd5cc5fd52d, type: 3}
+  TV4: {fileID: 3957894308575212004, guid: 5e5ae54b09da843dcb60e33202f7d244, type: 3}
+  TVBoard1: {fileID: 1164034058980435743, guid: ed2e608facf1c43ee9c4e31d6b8bf4b6,
+    type: 3}
+  TVBoard2: {fileID: 7483477978470809026, guid: 93f75580aa7664c0482467ba37dec290,
+    type: 3}
+  WardRobe1: {fileID: 7356025985140771618, guid: 04793b03b89eb4ee89bd1c1e27ac807f,
+    type: 3}
+  WardRobe2: {fileID: 6069143879281647071, guid: e6d20f7b0b2614bdab7432c362162c72,
+    type: 3}
+  WardRobe3: {fileID: 2345432824804378151, guid: 12edcc890e83a4467ab05590ed2e270c,
+    type: 3}
+  WM1: {fileID: 4555192116324613457, guid: 7c42b2b6fc2424540ab9eeec2cfd90fc, type: 3}
+  WM2: {fileID: 8782918694022852459, guid: 7f04b12b1585f4b62a0a2253a1c2f1e5, type: 3}
+  LowChest1: {fileID: 3818680387091348555, guid: d43734488a8e74645b310d1bb7ea6bd1,
+    type: 3}
+  LowChest2: {fileID: 6616380474567050606, guid: f920fe79265104b1dac92eefa049515e,
+    type: 3}
+  LowChest3: {fileID: 232033115711017472, guid: c7bccfe33e62a4fb5a77d228868d36a7,
+    type: 3}
+  simulator2tCamera: {fileID: 1143316722}
+  simulator3tCamera: {fileID: 1406160992}
+  simulator4tCamera: {fileID: 1013371437}
 --- !u!1 &790576077
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +934,7 @@ GameObject:
   - component: {fileID: 1267591917}
   - component: {fileID: 1267591919}
   m_Layer: 5
-  m_Name: BackGround
+  m_Name: SelectNameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1008,6 +1109,100 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8742202122227552800}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1616048653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616048654}
+  - component: {fileID: 1616048656}
+  - component: {fileID: 1616048655}
+  - component: {fileID: 1616048657}
+  m_Layer: 5
+  m_Name: TrukScaleText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1616048654
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616048653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 487334934}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 500}
+  m_SizeDelta: {x: 600, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1616048655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616048653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c11cd738493324035a5273f6bca260d9, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 70
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1616048656
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616048653}
+  m_CullTransparentMesh: 0
+--- !u!114 &1616048657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616048653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0195e0e6720e8441fa92f0802d1c3ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simulator2tCamera: {fileID: 1143316722}
+  simulator3tCamera: {fileID: 1406160992}
+  simulator4tCamera: {fileID: 1013371437}
+  truckScaleText: {fileID: 1616048655}
 --- !u!4 &1658155088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8742202123818590832, guid: dbfb2525e20ab431b9363478c927a8a5,
