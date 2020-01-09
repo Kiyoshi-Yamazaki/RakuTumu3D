@@ -112,15 +112,5 @@ public  class SelectTextController1 : MonoBehaviour
         return BuddhistAlterName[i];
     }    
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

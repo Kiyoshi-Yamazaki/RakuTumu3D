@@ -309,7 +309,6 @@ public class PrefabGenerator : MonoBehaviour
          
         while (GetOnPrefabCountList.Any(x => x != null))
         {
-          Debug.Log(GetOnPrefabCountList.Any(x => x != null));  
             NowChosenObject = GetOnPrefabCountList.Select(x => x.NameObject).First();
              int NowChosenObjectCount =GetOnPrefabCountList.Select(x => x.Count).First();
              if(NowChosenObject.transform.localScale.z >= ZAxisSpace)
@@ -318,23 +317,17 @@ public class PrefabGenerator : MonoBehaviour
                 ZAxisSpace = ZAxisMaxSpace;
                 NowChosenObjectPosition.z = SideWall.position.z-SideWall.localScale.z/2-NowChosenObject.transform.localScale.z/2;
              }
-            // NowChosenObject = GetOnPrefabCountList.Where(z => z.Width <= ZAxisSpace)
-                                                //   .OrderByDescending(z => z.Width).Select(x => x.NameObject).First();
-            // int NowChosenObjectCount = GetOnPrefabCountList.Where(z => z.Width <= ZAxisSpace)
-            //                                       .OrderByDescending(z => z.Width).Select(x => x.Count).First();
             GetNowChosenObjectPositionX();
             NowChosenObjectPosition.y = SideWall.position.y-SideWall.transform.localScale.y/2+NowChosenObject.transform.localScale.y/2;
             if(ZAxisSpace != ZAxisMaxSpace){NowChosenObjectPosition.z -= NowChosenObject.transform.localScale.z/2;}
             else{GetNowChosenObjectPositionZ();}
-            //  Prefab NewGetOnPrefab = GetOnPrefabCountList.Where(z => z.Width <= ZAxisSpace).OrderByDescending(x => x.Width).First();
             Prefab NewGetOnPrefab = GetOnPrefabCountList.First();
             if(NowChosenObject == Tire1 || NowChosenObject == Tire2 )
             {
                 Instantiate(NowChosenObject,NowChosenObjectPosition,NowChosenObject.transform.rotation);
                 
-                { Debug.Log("読み込みOK"); 
+                {  
                     SumHeight = 0;
-                    Debug.Log( NowChosenObjectCount);
                     for(int i = 1;i < NowChosenObjectCount;i++)
                     {
                         SumHeight += NowChosenObject.transform.localScale.y; 
@@ -384,12 +377,8 @@ public class PrefabGenerator : MonoBehaviour
                      
                     if(Physics.BoxCast(boxcastPosition,boxObjectScale*0.5f,new Vector3(0,-1,0),out hitBox))
                     {
-                        Debug.Log("小物生成");
-                         Debug.Log(hitBox.point);
                         if(hitBox.point.y+NowChosenObject.transform.localScale.y < TopWall.transform.position.y-TopWall.transform.localScale.y)
                         {
-                             Debug.Log(hitBox.point.y+NowChosenObject.transform.localScale.y);
-                              Debug.Log(TopWall.transform.position.y);
                             Vector3 generationPoint = new Vector3 (
                                 boxcastPosition.x,
                                 hitBox.point.y+NowChosenObject.transform.localScale.y/2,
@@ -405,7 +394,6 @@ public class PrefabGenerator : MonoBehaviour
                              lowPositionCount++;
                              boxcastPosition.x = LowPositionList[lowPositionCount].x+NowChosenObject.transform.localScale.x/2;
                              boxcastPosition.z = startPosition.z+NowChosenObject.transform.localScale.z/2;
-                              Debug.Log("列変更");
                         } 
                     }
                 }
@@ -419,10 +407,8 @@ public class PrefabGenerator : MonoBehaviour
             if(NowChosenObject == DiningChair){NewGetOnPrefab.Count -= 2;}
             else{NewGetOnPrefab.Count -= 1;}
             GetOnPrefabCountList.Add(NewGetOnPrefab);
-            // GetOnPrefabCountList.Where(z => z.Width <= ZAxisSpace).OrderByDescending(x => x.Width).ToList().RemoveAt(0);
             GetOnPrefabCountList.RemoveAt(0);   
-            GetOnPrefabCountList = GetOnPrefabCountList.Where(pre => pre.Count > 0).ToList(); 
-            Debug.Log(GetOnPrefabCountList.Any(x => x != null));               
+            GetOnPrefabCountList = GetOnPrefabCountList.Where(pre => pre.Count > 0).ToList();           
         }                 
     }
             // Update is called once per frame

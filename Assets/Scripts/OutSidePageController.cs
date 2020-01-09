@@ -95,10 +95,4 @@ public class OutSidePageController : MonoBehaviour
         KitchenSelectController.CountTextArray(PlantingObject,countPlanting);
         ScooterCountText.GetComponent<Text>().text = countScooter.ToString();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

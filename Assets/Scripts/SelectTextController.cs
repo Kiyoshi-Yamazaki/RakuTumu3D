@@ -10,10 +10,4 @@ public class SelectTextController : MonoBehaviour
     {
         this.GetComponent<Text>().text = UIManeger.builderText.ToString();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
