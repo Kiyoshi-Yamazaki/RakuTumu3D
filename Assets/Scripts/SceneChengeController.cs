@@ -15,7 +15,6 @@ public class SceneChengeController : MonoBehaviour
      public void ChangeToSelectScene()
     {
         SceneManager.LoadScene("SelectionScreen");
-        // SelectText.text = UIManeger.builderText.ToString();
     }
     // Start is called before the first frame update
    
