@@ -68,6 +68,36 @@ public class UIManeger : MonoBehaviour
         }
         GetSelectText(); 
     }  
+    public void ChangeToLivingPageFrom(Animator animator)
+    {
+        this.animatorLiving.SetTrigger("LivingTrigger");
+        animator.SetTrigger("BackToMenuTrigger");
+    }
+    public void ChangeToBedRoomPageFrom(Animator animator)
+    {
+        this.animatorBedRoom.SetTrigger("BedRoom Trigger");
+        animator.SetTrigger("BackToMenuTrigger");
+    }
+    public void ChangeToKitchenPageFrom(Animator animator)
+    {
+        this.animatorKitchen.SetTrigger("KitchenTrigger");
+        animator.SetTrigger("BackToMenuTrigger");
+    }
+     public void ChangeToAccessoryPageFrom(Animator animator)
+    {
+        this.animatorAccessory.SetTrigger("AccessoryPageTrigger");
+        animator.SetTrigger("BackToMenuTrigger");
+    }
+     public void ChangeToOutsidePageFrom(Animator animator)
+    {
+        this.animatorOutSide.SetTrigger ("OutSidePageTrigger");
+        animator.SetTrigger("BackToMenuTrigger");
+    }
+     public void ChangeToOthersPageFrom(Animator animator)
+    {
+        this.animatorOthers.SetTrigger ("OthersPageTrigger");
+        animator.SetTrigger("BackToMenuTrigger");
+    }
     public void SetSelectText(string st, int i)
     { 
         Text setText = this.selectText.GetComponent<Text>();
