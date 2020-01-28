@@ -6,22 +6,22 @@ using UnityEngine.UI;
 public class OthersPageController : MonoBehaviour
 {
     [SerializeField] GameObject FutonCountText;
-     [SerializeField] GameObject AirConditionerCountText;
-     [SerializeField] GameObject Kotatu1CountText;
-     [SerializeField] GameObject Kotatu2CountText;
-     [SerializeField] GameObject SteelRack1CountText;
-     [SerializeField] GameObject SteelRack2CountText;
-     [SerializeField] GameObject BuddhistAlter1CountText;
-     [SerializeField] GameObject BuddhistAlter2CountText;
-     GameObject[] KotatuObject ;
-     GameObject[] SteelRackObject;
-     GameObject[] BuddhistAlterObject;
-     public static　int countFuton;
-     public static int countAirConditioner;
-     public  static int[] countKotatu ={0,0};
-     public  static int[] countSteelRack ={0,0};
-     public  static int[] countBuddhistAlter ={0,0};
-     public  static int NumKotatu(int i)
+    [SerializeField] GameObject AirConditionerCountText;
+    [SerializeField] GameObject Kotatu1CountText;
+    [SerializeField] GameObject Kotatu2CountText;
+    [SerializeField] GameObject SteelRack1CountText;
+    [SerializeField] GameObject SteelRack2CountText;
+    [SerializeField] GameObject BuddhistAlter1CountText;
+    [SerializeField] GameObject BuddhistAlter2CountText;
+    GameObject[] KotatuObject ;
+    GameObject[] SteelRackObject;
+    GameObject[] BuddhistAlterObject;
+    public static　int countFuton;
+    public static int countAirConditioner;
+    public  static int[] countKotatu ={0,0};
+    public  static int[] countSteelRack ={0,0};
+    public  static int[] countBuddhistAlter ={0,0};
+    public  static int NumKotatu(int i)
     {
         return countKotatu[i];
     }
