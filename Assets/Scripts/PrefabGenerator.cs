@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-public class Prefab
+
+public class Prefab 
 {
+
     public GameObject NameObject;
     public float Volume,Height,Width,Depth,Area;
     public int Count;
@@ -17,6 +19,7 @@ public class Prefab
         this.Count = Count;
         this.Area = Area;
     }
+
 }
 public class PrefabGenerator : MonoBehaviour
 {
@@ -143,12 +146,12 @@ public class PrefabGenerator : MonoBehaviour
     }
     void Start()
     {
-         AccessoryPrefabCountList = _AccessoryPrefabList.Where(pre => pre.Count > 0);
-         FurniturePrefabCountList = _FurniturePrefabList.Where(pre => pre.Count > 0).ToList();
-         GetOnPrefabCountList = _GetOnPrefabList.Where(pre => pre.Count > 0).ToList();
-         LowPositionList = new List<Vector3>(){};
-         GetSumArea();
-         GetTruckSize();
+        AccessoryPrefabCountList = _AccessoryPrefabList.Where(pre => pre.Count > 0);
+        FurniturePrefabCountList = _FurniturePrefabList.Where(pre => pre.Count > 0).ToList();
+        GetOnPrefabCountList = _GetOnPrefabList.Where(pre => pre.Count > 0).ToList();
+        LowPositionList = new List<Vector3>(){};
+        GetSumArea();
+        GetTruckSize();
     }
     void GetSumArea ()
     {
@@ -158,7 +161,7 @@ public class PrefabGenerator : MonoBehaviour
     }
     void GetTruckSize()
     {    
-         if(0 < sumArea && sumArea <= 4.5f)
+        if(0 < sumArea && sumArea <= 4.5f)
         {
             SideWall = SideWall2t;
             BackWall = BackWall2t;
@@ -286,7 +289,7 @@ public class PrefabGenerator : MonoBehaviour
             {
                 GetRowPosition();
                 ZAxisSpace = ZAxisMaxSpace;
-                 NowChosenObjectPosition.z = SideWall.position.z-SideWall.localScale.z/2-NowChosenObject.transform.localScale.z/2;
+                NowChosenObjectPosition.z = SideWall.position.z-SideWall.localScale.z/2-NowChosenObject.transform.localScale.z/2;
             }
             NowChosenObject = FurniturePrefabCountList.Where(z => z.Width <= ZAxisSpace)
                                                   .OrderByDescending(z => z.Width).Select(x => x.NameObject).First();
@@ -309,8 +312,8 @@ public class PrefabGenerator : MonoBehaviour
         while (GetOnPrefabCountList.Any(x => x != null))
         {
             NowChosenObject = GetOnPrefabCountList.Select(x => x.NameObject).First();
-             int NowChosenObjectCount =GetOnPrefabCountList.Select(x => x.Count).First();
-             if(NowChosenObject.transform.localScale.z >= ZAxisSpace)
+            int NowChosenObjectCount =GetOnPrefabCountList.Select(x => x.Count).First();
+            if(NowChosenObject.transform.localScale.z >= ZAxisSpace)
              {
                   GetRowPosition();
                 ZAxisSpace = ZAxisMaxSpace;
@@ -368,7 +371,7 @@ public class PrefabGenerator : MonoBehaviour
                         0.05f,
                         NowChosenObject.transform.localScale.z
                         );
-                 int lowPositionCount = 0;
+                int lowPositionCount = 0;
                 double d = BottomWall.localScale.z/NowChosenObject.transform.localScale.z;
                 int columsCount = (int)d;
                 for(int i = 1;i <= columsCount*LowPositionList.Count;i++)
@@ -387,7 +390,7 @@ public class PrefabGenerator : MonoBehaviour
                             Instantiate(NowChosenObject,generationPoint,NowChosenObject.transform.rotation);
                              break;
                         }    
-                         boxcastPosition.z += NowChosenObject.transform.localScale.z;
+                        boxcastPosition.z += NowChosenObject.transform.localScale.z;
                         if(i%columsCount == 0)
                         {
                              lowPositionCount++;

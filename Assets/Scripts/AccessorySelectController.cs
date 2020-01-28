@@ -6,21 +6,21 @@ using UnityEngine.UI;
 public class AccessorySelectController : MonoBehaviour
 {
     [SerializeField] GameObject CardBoardCountText;
-     [SerializeField] GameObject PlasticChestCountText;
-     [SerializeField] GameObject ThreeStageCase1CountText;
-     [SerializeField] GameObject ThreeStageCase2CountText;
-     [SerializeField] GameObject CostumCase1CountText;
-     [SerializeField] GameObject CostumCase2CountText;
-     [SerializeField] GameObject BookCaseCountText;
-     [SerializeField] GameObject ColorBoxCountText;
-     GameObject[] ThreeStageCaseObject;
-     GameObject[] CostumCaseObject;
-     public static int[] countThreeStageCase ={0,0};
-     public static int[] countCostumCase ={0,0};
-     public static int countCardBoard;
-     public static int countPlasticChest;
-     public static int countBookCase;
-     public static int countColorBox;
+    [SerializeField] GameObject PlasticChestCountText;
+    [SerializeField] GameObject ThreeStageCase1CountText;
+    [SerializeField] GameObject ThreeStageCase2CountText;
+    [SerializeField] GameObject CostumCase1CountText;
+    [SerializeField] GameObject CostumCase2CountText;
+    [SerializeField] GameObject BookCaseCountText;
+    [SerializeField] GameObject ColorBoxCountText;
+    GameObject[] ThreeStageCaseObject;
+    GameObject[] CostumCaseObject;
+    public static int[] countThreeStageCase ={0,0};
+    public static int[] countCostumCase ={0,0};
+    public static int countCardBoard;
+    public static int countPlasticChest;
+    public static int countBookCase;
+    public static int countColorBox;
     public static int NumThreeStageCase(int i){ return countThreeStageCase[i];}
     public static int NumCostumCase(int i){return countCostumCase[i];}
     public void CountUpCardBoard()

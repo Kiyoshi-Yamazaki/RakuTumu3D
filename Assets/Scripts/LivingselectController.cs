@@ -8,23 +8,23 @@ public class LivingselectController : MonoBehaviour
     [SerializeField] GameObject TV1CountText;
     [SerializeField] GameObject TV2CountText;
     [SerializeField] GameObject TV3CountText;
-     [SerializeField] GameObject TV4CountText;
-     [SerializeField] GameObject TVBoard1CountText;
-     [SerializeField] GameObject TVBoard2CountText;
-     [SerializeField] GameObject Sofa1CountText;
-     [SerializeField] GameObject Sofa2CountText;
-     [SerializeField] GameObject Sofa3CountText;
-     [SerializeField] GameObject LivingBoard1CountText;
-     [SerializeField] GameObject LivingBoard2CountText;
-     GameObject[] TVObject ;
-     GameObject[] TVBoradObject ;
-     GameObject[] sofaObject ;
-     GameObject[] LivingBoardObject;
+    [SerializeField] GameObject TV4CountText;
+    [SerializeField] GameObject TVBoard1CountText;
+    [SerializeField] GameObject TVBoard2CountText;
+    [SerializeField] GameObject Sofa1CountText;
+    [SerializeField] GameObject Sofa2CountText;
+    [SerializeField] GameObject Sofa3CountText;
+    [SerializeField] GameObject LivingBoard1CountText;
+    [SerializeField] GameObject LivingBoard2CountText;
+    GameObject[] TVObject ;
+    GameObject[] TVBoradObject ;
+    GameObject[] sofaObject ;
+    GameObject[] LivingBoardObject;
     public static int[] countTV ={0,0,0,0}; 
     public static int[] countTVBoard ={0,0};
     public static int[] countSofa ={0,0,0};
     public static int[] countLivingBoard ={0,0}; 
-     public static int NumTV(int i)
+    public static int NumTV(int i)
     {
         return countTV[i];
     }
