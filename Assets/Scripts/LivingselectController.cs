@@ -103,5 +103,6 @@ public class LivingselectController : MonoBehaviour
         KitchenSelectController.CountTextArray(TVBoradObject,countTVBoard);
         KitchenSelectController.CountTextArray(sofaObject,countSofa);
         KitchenSelectController.CountTextArray(LivingBoardObject,countLivingBoard);
+        Debug.Log("変更");
     }
 }
