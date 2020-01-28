@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class LivingselectController : MonoBehaviour
 {
     [SerializeField] GameObject TV1CountText;
-     [SerializeField] GameObject TV2CountText;
-     [SerializeField] GameObject TV3CountText;
+    [SerializeField] GameObject TV2CountText;
+    [SerializeField] GameObject TV3CountText;
      [SerializeField] GameObject TV4CountText;
      [SerializeField] GameObject TVBoard1CountText;
      [SerializeField] GameObject TVBoard2CountText;
