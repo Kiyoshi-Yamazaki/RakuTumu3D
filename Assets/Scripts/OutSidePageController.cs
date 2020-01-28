@@ -6,21 +6,21 @@ using UnityEngine.UI;
 public class OutSidePageController : MonoBehaviour
 {
     [SerializeField] GameObject Tire1CountText;
-     [SerializeField] GameObject Tire2CountText;
-     [SerializeField] GameObject Bicycle1CountText;
-     [SerializeField] GameObject Bicycle2CountText;
-     [SerializeField] GameObject Bicycle3CountText;
-     [SerializeField] GameObject Planting1CountText;
-     [SerializeField] GameObject Planting2CountText;
-     [SerializeField] GameObject ScooterCountText;
-     GameObject[] TireObject;
-     GameObject[] BicycleObject;
-     GameObject[] PlantingObject;
-     public static int[] countTire ={0,0};
-     public static int[] countBicycle ={0,0,0};
-     public static int[] countPlanting ={0,0};
-     public static int countScooter = 0;
-     public static int NumTire(int i)
+    [SerializeField] GameObject Tire2CountText;
+    [SerializeField] GameObject Bicycle1CountText;
+    [SerializeField] GameObject Bicycle2CountText;
+    [SerializeField] GameObject Bicycle3CountText;
+    [SerializeField] GameObject Planting1CountText;
+    [SerializeField] GameObject Planting2CountText;
+    [SerializeField] GameObject ScooterCountText;
+    GameObject[] TireObject;
+    GameObject[] BicycleObject;
+    GameObject[] PlantingObject;
+    public static int[] countTire ={0,0};
+    public static int[] countBicycle ={0,0,0};
+    public static int[] countPlanting ={0,0};
+    public static int countScooter = 0;
+    public static int NumTire(int i)
     {
         return countTire[i];
     }
